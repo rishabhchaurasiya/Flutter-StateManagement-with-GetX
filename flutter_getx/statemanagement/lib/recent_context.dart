@@ -41,11 +41,12 @@ class _RecentContextState extends State<RecentContext> {
       ),
       backgroundColor: const Color(0xFFcbe6f6),
       body: Container(
-        margin: const EdgeInsets.only(left: 20, top: 10, right: 10),
+        margin: const EdgeInsets.only(left: 20, right: 10),
         child: Column(
           children: [
             Expanded(
               child: SingleChildScrollView(
+                padding: const EdgeInsets.only(top: 10),
                 child: Column(
                   children: [
                     for (int i = 0; i < info.length; i++)
